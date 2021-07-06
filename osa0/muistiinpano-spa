@@ -1,0 +1,7 @@
+title Muistiinpano spa
+
+
+selain->palvelin: HTTP POST, Request URL: https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+palvelin-->selain: json objekti {"message":"note created"}
+
+//Käyttäjän luotua uuden muistiinpanon, selain ei joutunut pyytämään uudelleen palvelimelta html-, css- ja javascript-tiedostoja. 

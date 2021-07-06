@@ -1,0 +1,14 @@
+title Sekvenssikaavio
+
+selain->palvelin: HTTP POST, Request URL:https://studies.cs.helsinki.fi/exampleapp/new_note
+palvelin-->selain: No response
+selain->palvelin: HTTP GET, Request URL: https://studies.cs.helsinki.fi/exampleapp/notes
+palvelin-->selain: HTML-koodi
+selain->palvelin: HTTP GET, Request URL: https://studies.cs.helsinki.fi/exampleapp/main.css
+palvelin-->selain: Css-koodi
+selain->palvelin: HTTP GET, Request URL: https://studies.cs.helsinki.fi/exampleapp/main.js
+palvelin-->selain: JavaScript-koodi
+selain->palvelin: HTTP GET, Request URL: https://studies.cs.helsinki.fi/exampleapp/data.json
+palvelin-->selain: Kaikki notet json formaatissa
+
+//Html-, css ja javascipt-tiedostot pyydetään palvelimelta joka kerta, kun käyttäjä luo uuden muistiinpanon

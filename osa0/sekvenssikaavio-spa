@@ -1,0 +1,13 @@
+title Sekvenssikaavio spa
+
+
+selain->palvelin: HTTP GET, Request URL: https://studies.cs.helsinki.fi/exampleapp/spa
+palvelin-->selain: HTML-koodi
+selain->palvelin: HTTP GET, Request URL: https://studies.cs.helsinki.fi/exampleapp/main.css
+palvelin-->selain: Css-koodi
+selain->palvelin: HTTP GET, Request URL: https://studies.cs.helsinki.fi/exampleapp/spa.js
+palvelin-->selain: JavaScript-koodi
+selain->palvelin: HTTP GET, Request URL: https://studies.cs.helsinki.fi/exampleapp/data.json
+palvelin-->selain: Kaikki notet json formaatissa
+
+//Html-, css ja javascipt-tiedostot pyydetään palvelimelta kun käyttäjä avaa sivun ensimmäistä kertaa.
