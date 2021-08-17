@@ -8,9 +8,7 @@ const Numbers = ({ persons, search }) => {
         .filter((value) => {
           if (search === "") {
             return value;
-          } else if (
-            value.name.toLowerCase().includes(search.toLocaleLowerCase())
-          ) {
+          } else if (value.name.toLowerCase().includes(search.toLowerCase())) {
             return value;
           }
         })
