@@ -40,7 +40,6 @@ const App = () => {
   };
 
   useEffect(() => {
-    console.log("effect");
     axios.get("http://localhost:3001/persons").then((response) => {
       setPersons(response.data);
     });
